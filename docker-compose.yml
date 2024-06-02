@@ -30,7 +30,7 @@ services:
         networks:
             - laravel-network
         volumes:
-            - ./nachopps-app:/app
+            - .:/app
 
 networks:
     laravel-network:
