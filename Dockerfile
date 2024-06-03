@@ -13,4 +13,4 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 # Comando predeterminado para iniciar Laravel
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=8000 & npm run dev --host=0.0.0.0"]
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=8000  & npm run dev --host=0.0.0.0"]

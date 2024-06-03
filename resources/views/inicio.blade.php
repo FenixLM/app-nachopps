@@ -41,11 +41,12 @@
     </section>
 
     <section>
-        <h1 class="m-1 text-center"> Lo que te podría apetecer </h1>
+        <div class="content">
+            @yield('content')
+        </div>
+            {{-- <div id="menus-container" class="contenedor-productos">
 
-        <div>
-            <div id="menus-container" class="contenedor-productos">
-
+            </div> --}}
                 <!-- <div class="card">
                     <div class="card-img">
                         <img src="assets/img/anticucho-1.jpg" alt="Producto1">
@@ -161,7 +162,7 @@
                 </div> -->
 
 
-            </div>
+
         </div>
 
     </section>
