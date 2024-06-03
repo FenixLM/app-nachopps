@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NACHOPPS RESTAURANTE</title>
 
-    @Vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    @Vite(['resources/css/app.css','resources/js/app.js'])
+
 </head>
 
 <body>
@@ -21,24 +29,10 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contactanos</a></li>
         </ul>
     </nav>
-
-    <section>
-        <table id="miTabla">
-            <tr>
-                <td data-info="Información 1">Elemento 1</td>
-            </tr>
-            <tr>
-                <td data-info="Información 2">Elemento 2</td>
-            </tr>
-            <tr>
-                <td data-info="Información 3">Elemento 3</td>
-            </tr>
-        </table>
-    </section>
 
     <section>
         <div class="img-header">
@@ -47,158 +41,127 @@
     </section>
 
     <section>
-        <h1 class="m-1"> Lo que te podria apetecer </h1>
+        <h1 class="m-1 text-center"> Lo que te podría apetecer </h1>
 
-
-        <div id="infoContainer"></div>
         <div>
-            <div class="contenedor-productos">
+            <div id="menus-container" class="contenedor-productos">
 
-                <table border="0">
-
-                    <tr>
-                        <td width="25%">
-                            <div>
-                                <img src="assets/img/anticucho-1.jpg" width="350" height="400">
-
-                                <div class="card-body">
-                                    <h4 class="text-center">Producto 1</h4>
-                                    <div class="mt-1">
-                                        <p>Descripcion del producto 1</p>
-                                        <p>Precio: S/10.00</p>
-                                    </div>
-
-                                    <div class="m-1 text-center">
-                                        <button class="btn-comprar">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-
-                        <td width="25%">
-                            <div>
-                                <img src="assets/img/anticucho-2.jpg" width="350" height="400">
-
-                                <div class="card-body">
-                                    <h4 class="text-center">Producto 2</h4>
-                                    <div class="mt-1">
-                                        <p>Descripcion del producto 2</p>
-                                        <p>Precio: S/20.00</p>
-                                    </div>
-
-                                    <div class="m-1 text-center">
-                                        <button class="btn-comprar">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-
-                        <td width="25%">
-                            <div class="card-img">
-                                <img src="assets/img/parihuela-2.jpg" width="350" height="400">
-
-                                <div class="card-body">
-                                    <h4 class="text-center">Producto 3</h4>
-                                    <div class="mt-1">
-                                        <p>Descripcion del producto 3</p>
-                                        <p>Precio: S/30.00</p>
-                                    </div>
-
-                                    <div class="m-1 text-center">
-                                        <button class="btn-comprar">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-
-                        <td width="25%">
-                            <div class="card-img">
-                                <img src="assets/img/PIZZA 1.jpg" width="350" height="400">
-
-                                <div class="card-body">
-                                    <h4 class="text-center">Producto 4</h4>
-                                    <div class="mt-1">
-                                        <p>Descripcion del producto 4</p>
-                                        <p>Precio: S/40.00</p>
-                                    </div>
-
-                                    <div class="m-1 text-center">
-                                        <button class="btn-comprar">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-
-                    </tr>
-
-                </table>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-
-        <div class="mt-2 nosotros">
-
-            <h1 class="text-center">SOBRE LA EMPRESA</h1>
-
-            <div class="valores-organizacionales">
-
-                <div>
-
-                    <h3 class="uppercase">
-                        misión
-                    </h3>
-
-                    <div class="mision-container">
-                        <div class="mision-container-img">
-                            <img src="assets/img/mision.jpg" alt="Mision">
+                <!-- <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
                         </div>
 
-                        <p class="mt-1">
-                            Ofrecer a nuestros clientes una experiencia gastronómica excepcional, utilizando
-                            ingredientes
-                            frescos y de calidad para crear platos innovadores que satisfagan los paladares más
-                            exigentes.
-                            Además, brindar un servicio cálido y personalizado que genere vínculos duraderos con
-                            nuestros
-                            clientes.
-                        </p>
                     </div>
 
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div> -->
+                <!-- 
 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
+                        </div>
 
+                    </div>
 
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
                 </div>
 
 
-                <div>
-
-                    <h3 class="uppercase">
-                        visión
-                    </h3>
-
-                    <div class="mision-container">
-                        <div class="vision-container-img">
-                            <img src="assets/img/vision.jpg" alt="Mision">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
                         </div>
 
-                        <p class="mt-1">
-                            Ser el punto de encuentro preferido de la comunidad sullanera, ofreciendo experiencias
-                            culinarias únicas y un ambiente acogedor que promueva la conexión y el disfrute de momentos
-                            especiales.
-                        </p>
                     </div>
 
-
-
-
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
                 </div>
 
-            </div>
 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
+                        </div>
+
+                    </div>
+
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
+                        </div>
+
+                    </div>
+
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">Producto 1</h4>
+                        <div class="mt-1">
+                            <p>Descripcion del producto 1</p>
+                            <p>Precio: $10.00</p>
+                        </div>
+
+                    </div>
+
+                    <div class="m-1 text-center">
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div> -->
+
+
+            </div>
         </div>
 
     </section>
@@ -259,6 +222,7 @@
 
     </footer>
 
+    <a id="wssp" class="whatsapp d-none" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
     <script src="app.js"></script>
 
