@@ -3,21 +3,20 @@
 # Instalar las dependencias de Composer
 composer install
 
-# # Esperar a que MariaDB esté disponible
-# until mysql -h "$DB_HOST" -u "$DB_USERNAME" -e 'SHOW DATABASES;' &> /dev/null; do
-#   echo "Host: $DB_HOST Esperando a la base de datos..."
-#   echo "Host: $DB_HOST"
-# echo "Usuario: $DB_USERNAME"
-#   sleep 2
-# done
-
-# generar la clave de la aplicación
+# Generar la clave de la aplicación
 php artisan key:generate
 
-# # Ejecutar las migraciones
+# Ejecutar las migraciones
 php artisan migrate --force
 
+# Instalar dependencias de NPM
+npm install
 
+
+#Iniciar Laravel
+php artisan serve --host=0.0.0.0 --port=8000 &
+npm run dev --host=0.0.0.0
+# npm run dev --host
 
 # Ejecutar el comando original
 exec "$@"

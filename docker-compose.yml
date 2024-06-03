@@ -24,6 +24,7 @@ services:
         container_name: laravel
         ports:
             - "8000:8000"
+            - "5173:5173"
         environment:
             - DB_HOST=mariadb
             - DB_PORT=3306
