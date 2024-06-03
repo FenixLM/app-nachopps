@@ -1,7 +1,7 @@
 // import './bootstrap';
 
 
-// console.log('Hello World!');
+console.log('Hello  ss Wor ld s s s!');
 
 // // string = caracteres '' ""
 // // number = números
@@ -123,24 +123,25 @@
 //     // menuElement.appendChild(cardElement);
 // })
 
-// function comprar(idMenu) {
-//     console.log('comprar', idMenu);
-//     // para complicarnos la vida
+function comprar(idMenu) {
+    console.log('comprar', idMenu);
+    // console.log('comprar', idMenu);
+    // para complicarnos la vida
 
-//     //filter => retorna un nuevo arreglo con los elementos que cumplan la condicion
-//     //find => retorna el primer elemento que cumpla la condicion
+    // filter => retorna un nuevo arreglo con los elementos que cumplan la condicion
+    // find => retorna el primer elemento que cumpla la condicion
 
-//     const menu = menus.find((menu) => menu.id === idMenu);
-//     console.log('menu encontrado', menu);
+    // const menu = menus.find((menu) => menu.id === idMenu);
+    // console.log('menu encontrado', menu);
 
 
-//     carrito.push(menu);
-//     console.log('carrito', carrito);
+    // carrito.push(menu);
+    // console.log('carrito', carrito);
 
-//     const btnWssp = document.getElementById('wssp');
-//     btnWssp.classList.remove('d-none');
+    // const btnWssp = document.getElementById('wssp');
+    // btnWssp.classList.remove('d-none');
 
-// }
+}
 
 
 // const btnWssp = document.getElementById('wssp');

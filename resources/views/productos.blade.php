@@ -2,7 +2,6 @@
 
 @section('content')
     <h1>Listado de Productos</h1>
-
     <ul>
         @foreach ($productos as $producto)
         <div class="card">
@@ -19,7 +18,7 @@
             </div>
 
             <div class="m-1 text-center">
-                <button type="button" class="btn btn-primary">Comprar</button>
+                <button type="button" class="btn btn-primary" onclick="comprar({{ $producto }})">Comprar</button>
             </div>
         </div>
         @endforeach
