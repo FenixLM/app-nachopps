@@ -3,23 +3,26 @@ import './bootstrap';
 document.addEventListener('DOMContentLoaded', function () {
     agregarMenu();
     enviarMenuPorWssp();
-}
-);
+});
 
 const carrito = [];
 const agregarMenu = () => {
 
-    const btnComprar = document.querySelector('#btn-comprar');
+    const btnsComprar = document.querySelectorAll('.btn-comprar');
 
-    btnComprar.addEventListener('click', () => {
-        const dataProducto = btnComprar.dataset.producto;
-        const dataProductoJson = JSON.parse(dataProducto);
+    btnsComprar.forEach((btnComprar) => {
 
-        carrito.push(dataProductoJson);
-        console.log('carrito', carrito);
+        btnComprar.addEventListener('click', () => {
+            const dataProducto = btnComprar.dataset.producto;
+            const dataProductoJson = JSON.parse(dataProducto);
 
-        const btnWssp = document.querySelector('#wssp');
-        btnWssp.classList.remove('d-none');
+            carrito.push(dataProductoJson);
+            console.log('carrito', carrito);
+
+            const btnWssp = document.querySelector('#wssp');
+            btnWssp.classList.remove('d-none');
+        });
+
     });
 }
 
