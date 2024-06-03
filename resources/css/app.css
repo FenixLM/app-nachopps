@@ -112,7 +112,7 @@
     }
 
     .contenedor-productos {
-        display: inline-block; /* Permite que el contenedor se ajuste al contenido */
+        display: grid;
         text-align: left; /* Alinea el contenido de forma predeterminada a la izquierda */
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;

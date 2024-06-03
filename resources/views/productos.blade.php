@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Listado de Productos</h1>
-    <ul>
+    <ul class="contenedor-productos ">
         @foreach ($productos as $producto)
         <div class="card">
             <div class="card-img">
