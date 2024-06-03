@@ -23,7 +23,7 @@
     <nav class="navegacion">
         <div class="img-logo">
             <a href="index.html">
-                <img src="assets/img/logo-sinfondo.png" alt="Logo">
+                <img src="{{ Vite::asset('resources/images/logo.jpg') }}" alt="Logo">
             </a>
         </div>
         <ul>
@@ -36,7 +36,7 @@
 
     <section>
         <div class="img-header">
-            <img src="assets/img/fondo-rectangular.jpg" alt="Fondo nachopps">
+            <img src="{{ Vite::asset('resources/images/fondo-rectangular.jpg') }}" alt="Fondo nachopps">
         </div>
     </section>
 
@@ -171,7 +171,7 @@
 
         <div>
             <div class="footer-logo">
-                <img src="assets/img/logo.jpg" alt="">
+                <img src="{{ Vite::asset('resources/images/logo.jpg') }}" alt="">
             </div>
         </div>
 
@@ -225,8 +225,7 @@
 
     <a id="wssp" class="whatsapp d-none" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
-    <script src="app.js"></script>
-
+    @Vite('resources/js/app.js')
 </body>
 
 </html>

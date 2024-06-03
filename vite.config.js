@@ -13,7 +13,7 @@ export default defineConfig({
     },
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/views/**/*.blade.php'],
+            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/views/**/*.blade.php', 'resources/img/**/*'],
             refresh: true,
         }),
     ],

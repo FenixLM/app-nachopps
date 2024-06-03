@@ -18,7 +18,7 @@
             </div>
 
             <div class="m-1 text-center">
-                <button type="button" class="btn btn-primary" onclick="comprar({{ $producto }})">Comprar</button>
+                <button id="btn-comprar" type="button" class="btn btn-primary"  data-producto="{{ $producto }}">Comprar</button>
             </div>
         </div>
         @endforeach

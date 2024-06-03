@@ -19,8 +19,8 @@
     }
 
     a {
-        text-decoration: none;
-        color: white;
+        text-decoration: none !important;
+        color: white !important;
     }
 }
 
@@ -42,8 +42,8 @@
         position: absolute;
         top: 10px;
         left: 1rem;
-        width: 150px;
-        /* height: 70px; */
+        /* width: 150px; */
+        height: 70px;
         display: block;
     }
 
@@ -249,4 +249,21 @@
 
 #miTabla td:hover + #infoContainer {
     display: block;
+}
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
 }
