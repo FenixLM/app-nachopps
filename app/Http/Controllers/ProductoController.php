@@ -13,6 +13,9 @@ class ProductoController extends Controller
     public function index()
     {
        $productos = Producto:: all();
+
+       // compact('productos') es equivalente a ['productos' => $productos]
+       // en donde la clave 'productos' es el nombre de la variable que se pasará a la vista
        return view('productos', compact('productos'));
        echo $datos;
     }
@@ -25,65 +28,42 @@ class ProductoController extends Controller
         // Datos de ejemplo para crear 10 productos
         $productos = [
             [
-                'nombre' => 'Producto 1',
-                'descripcion' => 'Descripción del Producto 1',
-                'precio' => 10.99,
-                'imagen' => 'producto1.jpg',
+                "nombre" => "Lasaña de Carne",
+                "descripcion" => "Deliciosa lasaña de carne con salsa de tomate casera y queso gratinado.",
+                "precio" => 10.00,
+                "imagen" => "resources/images/lasaña-2.jpg"
             ],
             [
-                'nombre' => 'Producto 2',
-                'descripcion' => 'Descripción del Producto 2',
-                'precio' => 15.99,
-                'imagen' => 'producto2.jpg',
+                "nombre" => "Anticuchos",
+                "descripcion" => "Tradicionales brochetas de corazón de res marinadas y acompañadas de papas doradas.",
+                "precio" => 20.00,
+                "imagen" => "resources/images/anticucho-1.jpg"
             ],
             [
-                'nombre' => 'Producto 3',
-                'descripcion' => 'Descripción del Producto 3',
-                'precio' => 20.99,
-                'imagen' => 'producto3.jpg',
+                "nombre" => "Pizza Hawaiana",
+                "descripcion" => "Pizza con base de salsa de tomate, jamón, piña y abundante queso mozzarella.",
+                "precio" => 30.00,
+                "imagen" => "resources/images/pizza-3.jpg"
             ],
             [
-                'nombre' => 'Producto 4',
-                'descripcion' => 'Descripción del Producto 4',
-                'precio' => 25.99,
-                'imagen' => 'producto4.jpg',
+                "nombre" => "Sudado de Mero",
+                "descripcion" => "Mero cocido al vapor con hierbas frescas y vegetales, servido en una deliciosa salsa.",
+                "precio" => 40.00,
+                "imagen" => "resources/images/sudadomero-1.jpg"
             ],
             [
-                'nombre' => 'Producto 5',
-                'descripcion' => 'Descripción del Producto 5',
-                'precio' => 30.99,
-                'imagen' => 'producto5.jpg',
+                "nombre" => "Leche de Tigre",
+                "descripcion" => "Refrescante y picante mezcla de pescado fresco marinado en limón con cebolla y ají.",
+                "precio" => 50.00,
+                "imagen" => "resources/images/leche-3.jpg"
             ],
             [
-                'nombre' => 'Producto 6',
-                'descripcion' => 'Descripción del Producto 6',
-                'precio' => 35.99,
-                'imagen' => 'producto6.jpg',
-            ],
-            [
-                'nombre' => 'Producto 7',
-                'descripcion' => 'Descripción del Producto 7',
-                'precio' => 40.99,
-                'imagen' => 'producto7.jpg',
-            ],
-            [
-                'nombre' => 'Producto 8',
-                'descripcion' => 'Descripción del Producto 8',
-                'precio' => 45.99,
-                'imagen' => 'producto8.jpg',
-            ],
-            [
-                'nombre' => 'Producto 9',
-                'descripcion' => 'Descripción del Producto 9',
-                'precio' => 50.99,
-                'imagen' => 'producto9.jpg',
-            ],
-            [
-                'nombre' => 'Producto 10',
-                'descripcion' => 'Descripción del Producto 10',
-                'precio' => 55.99,
-                'imagen' => 'producto10.jpg',
-            ],
+                "nombre" => "Parihuela",
+                "descripcion" => "Sopa de mariscos al estilo peruano, con un toque picante y especias aromáticas.",
+                "precio" => 60.00,
+                "imagen" => "resources/images/parihuela-2.jpg"
+            ]
+        
         ];
 
         // Itera sobre los datos y crea cada producto

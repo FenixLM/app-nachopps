@@ -43,7 +43,7 @@
         top: 10px;
         left: 1rem;
         /* width: 150px; */
-        height: 70px;
+        height: 70px ;
         display: block;
     }
 
@@ -134,6 +134,12 @@
     .card-img {
         width: auto;
         height: auto;
+        object-fit: cover;
+    }
+
+    .card-img img {
+        width: 300px !important;
+        height: 200px;
         object-fit: cover;
     }
 

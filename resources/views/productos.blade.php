@@ -2,11 +2,11 @@
 
 @section('content')
     <h1>Listado de Productos</h1>
-    <ul class="contenedor-productos ">
+    <ul class="contenedor-productos">
         @foreach ($productos as $producto)
         <div class="card">
             <div class="card-img">
-                <img src="assets/img/anticucho-1.jpg" alt="Producto1">
+                <img src="{{ Vite::asset($producto['imagen']) }}" alt="Producto1">
             </div>
             <div class="card-body">
                 <h4 class="text-center">{{ $producto->nombre }}</h4>
