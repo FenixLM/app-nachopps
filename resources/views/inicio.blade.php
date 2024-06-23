@@ -33,7 +33,6 @@
                     <li><a href="{{ route('index') }}">Inicio</a></li>
                     <li><a href="{{ route('index') }}#menu">Menu</a></li>
                     <li><a href="{{ route('nosotros') }}">Nosotros</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
             </nav>
 
@@ -66,10 +65,9 @@
 
         <div>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="{{ route('index') }}">Inicio</a></li>
+                <li><a href="{{ route('index') }}#menu">Menu</a></li>
+                <li><a href="{{ route('nosotros') }}">Nosotros</a></li>
             </ul>
         </div>
 
