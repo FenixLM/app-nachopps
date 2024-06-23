@@ -13,156 +13,44 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     @Vite(['resources/css/app.css','resources/js/app.js'])
 
 </head>
 
 <body>
 
-    <nav class="navegacion">
-        <div class="img-logo">
-            <a href="index.html">
-                <img src="{{ Vite::asset('resources/images/logo.jpg') }}" alt="Logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="pages/nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>
-        </ul>
-    </nav>
+    <section class="header">
+        <div class="flex flex-around p-3">
+            <div>
+                <a href="{{ route('index') }}">
+                    <img src="{{ Vite::asset('resources/images/logo-transparente.png') }}" alt="Logo" width="100">
+                </a>
+            </div>
 
-    <section>
-        <div class="img-header">
-            <img src="{{ Vite::asset('resources/images/fondo-rectangular.jpg') }}" alt="Fondo nachopps">
+            <nav>
+                <ul class="flex gap-4 font-weight-500">
+                    <li><a href="{{ route('index') }}">Inicio</a></li>
+                    <li><a href="{{ route('index') }}#menu">Menu</a></li>
+                    <li><a href="{{ route('nosotros') }}">Nosotros</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="text-header">
+
+            <h1> Innovación en cada plato,</h1>
+            <h2> tradición en cada sabor</h2>
+            
         </div>
     </section>
 
-    <section>
+
+    <section id="menu" >
         <div class="content">
             @yield('content')
-        </div>
-            {{-- <div id="menus-container" class="contenedor-productos">
-
-            </div> --}}
-                <!-- <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div> -->
-                <!-- 
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div>
-
-
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="assets/img/anticucho-1.jpg" alt="Producto1">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="text-center">Producto 1</h4>
-                        <div class="mt-1">
-                            <p>Descripcion del producto 1</p>
-                            <p>Precio: $10.00</p>
-                        </div>
-
-                    </div>
-
-                    <div class="m-1 text-center">
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                </div> -->
-
-
-
         </div>
 
     </section>
